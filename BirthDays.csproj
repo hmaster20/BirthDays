@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\biryukov.BTL\Desktop\Days.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B466F0E-762A-4101-AFDC-2ABFFACEB135}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Days</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Days</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormEventInfo.Designer.cs">
+      <DependentUpon>FormEventInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormChangeHour.Designer.cs">
+      <DependentUpon>FormChangeHour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormCalculations.Designer.cs">
+      <DependentUpon>FormCalculations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormAddContact.Designer.cs">
+      <DependentUpon>FormAddContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormCalculations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormChangeHour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\DateEvent.cs" />
+    <Compile Include="Class\DateEventCollection.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Settings.cs" />
+    <Compile Include="Class\TimeMeasure.cs" />
+    <Compile Include="Class\TimeMeasureCollection.cs" />
+    <Compile Include="Class\Measure.cs" />
+    <Compile Include="Class\DictionaryItem.cs" />
+    <Compile Include="Class\XmlSerializeHelper.cs" />
+    <Compile Include="Form\FormEventInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormAddContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Contact.cs" />
+    <Compile Include="Class\ContactCollection.cs" />
+    <Compile Include="Form\FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon\about.ico" />
+    <Content Include="icon\AddContact.ico" />
+    <Content Include="icon\Calculations.ico" />
+    <Content Include="icon\EventInfo.ico" />
+    <Content Include="icon\Main.ico" />
+    <Content Include="icon\Settings.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
